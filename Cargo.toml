@@ -1,0 +1,11 @@
+[package]
+name = "bug-report-20230225"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+surrealdb = { git = "https://github.com/surrealdb/surrealdb", rev = "5e2236d", default-features = false, features = ["kv-mem", "kv-rocksdb"] }
+tokio = { version = "1", features = ["full"] }
